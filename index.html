@@ -1,12 +1,386 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles.css" />
     <title>Admin Panel</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Checkbox para manejar el estado -->
+      <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+
+      <!-- Dashboard -->
+      <aside class="dashboard">
+        <!-- Section-Dashboard-1 -->
+
+        <div class="dashboard-header">
+          <img
+            src="/iconos/view-dashboard.svg"
+            width="60px"
+            alt="Dashboard"
+            class="icon-dashboard icon-title"
+          />
+          <h1>Dashboard</h1>
+          <label for="menu-toggle" class="close-btn">
+            <img
+              class="menu-close"
+              src="/iconos/menu-close.svg"
+              width="30"
+              alt="Close"
+              class="icon-dashboard icon-btn-close"
+            />
+          </label>
+        </div>
+
+        <!-- Section-Dashboard-2 -->
+
+        <ul class="dashboard-section-1">
+          <li class="content-icon">
+            <img src="/iconos/home.svg" width="30px" alt="home" class="icon-dashboard" />
+            <p>Home</p>
+          </li>
+          <li class="content-icon">
+            <img
+              src="/iconos/card-account-details-outline.svg"
+              width="30px"
+              alt="profile"
+              class="icon-dashboard"
+            />
+            <p>Profile</p>
+          </li>
+          <li class="content-icon">
+            <img
+              src="/iconos/message-reply.svg"
+              width="30px"
+              alt="messages"
+              class="icon-dashboard"
+            />
+            <p>Messages</p>
+          </li>
+          <li class="content-icon">
+            <img
+              src="/iconos/clock-outline.svg"
+              width="30px"
+              alt="History"
+              class="icon-dashboard"
+            />
+            <p>History</p>
+          </li>
+          <li class="content-icon">
+            <img
+              src="/iconos/note-multiple.svg"
+              width="30px"
+              alt="tasks"
+              class="icon-dashboard"
+            />
+            <p>Tasks</p>
+          </li>
+          <li class="content-icon">
+            <img
+              src="/iconos/account-group.svg"
+              width="30px"
+              alt="Communities"
+              class="icon-dashboard"
+            />
+            <p>Communities</p>
+          </li>
+        </ul>
+
+        <!-- Section-Dashboard-3 -->
+        <ul class="dashboard-section-2">
+          <li class="content-icon">
+            <img src="/iconos/cog.svg" width="30px" alt="Settings" class="icon-dashboard"/>
+            <p>Settings</p>
+          </li>
+          <li class="content-icon">
+            <img src="/iconos/help-box.svg" width="30px" alt="Support" class="icon-dashboard"/>
+            <p>Support</p>
+          </li>
+          <li class="content-icon">
+            <img
+              src="/iconos/account-group.svg"
+              width="30px"
+              alt="Privacy"
+              class="icon-dashboard"
+            />
+            <p>Privacy</p>
+          </li>
+        </ul>
+      </aside>
+
+      <!-- main-content -->
+
+      <div class="main-content">
+        <!-- Header -->
+
+        <header class="header">
+          <div class="header-top"></div>
+          <div class="header-buttom"></div>
+        </header>
+
+        <!--main  -->
+        <main class="main">
+          <section class="section-announcements"></section>
+          <section class="section-projects"></section>
+          <section class="section-trending"></section>
+        </main>
+      </div>
+      <!-- 
+      <header class="header">
+        <div class="content-search">
+          <label for="toggle-sidebar" class="menu-open">
+            <img src="/iconos/menu-open.svg" width="30px" alt="menu" />
+          </label>
+
+          <img class="lupa" src="/iconos/lupa.svg" width="30px" alt="lupa" />
+          <input class="search" type="search" />
+        </div>
+        <div class="content-perfil">
+          <img
+            class="notification-icon"
+            src="/iconos/notificacion.svg"
+            width="30px"
+            alt="notificación"
+          />
+          <img
+            class="img-perfil"
+            src="/imagenes/perfil/descarga.jpg"
+            width="30px"
+            alt="perfil"
+          />
+          <p>Morgan Oakley</p>
+        </div>
+      </header>
+      <div class="nav">
+        <div class="container-perfil1">
+          <img
+            class="img-nav"
+            src="/imagenes/perfil/descarga.jpg"
+            width="40px"
+            alt="perfil"
+          />
+          <div class="container-text">
+            <p>Hi there,</p>
+            <p class="text-bold">Morgan Oakley (@morgan)</p>
+          </div>
+        </div>
+        <div class="container-btn">
+          <button>New</button>
+          <button>Upload</button>
+          <button>Share</button>
+        </div>
+      </div>
+      <article class="projects">
+        <p class="title-1">Your Projects</p>
+        <div class="content-cards">
+          <div class="card">
+            <div class="title">Super Cool Project</div>
+            <p>
+              Sed tempus ut lacus ut scelerique. Suspendisse sollicitudin nibh
+              erat, id facilisis felis accumsan nec.
+            </p>
+            <div class="icons">
+              <img
+                src="/iconos/star-plus-outline.svg"
+                width="30px"
+                alt="visita"
+              />
+              <img
+                src="/iconos/eye-plus-outline.svg"
+                width="30px"
+                alt="visita"
+              />
+              <img src="/iconos/source-fork.svg" width="30px" alt="visita" />
+            </div>
+          </div>
+          <div class="card">
+            <div class="title">Less Cool Project</div>
+            <p>
+              Nullam condimentum ipsum ut lectus vehicula conectetur. Quisque
+              sed dolor tincidunt, consectetur sapien et, facilisis dolor. Duis
+              sem purus, dignissim ut sapien in, varius pellentesque lacus.
+            </p>
+            <div class="icons">
+              <img
+                src="/iconos/star-plus-outline.svg"
+                width="30px"
+                alt="visita"
+              />
+              <img
+                src="/iconos/eye-plus-outline.svg"
+                width="30px"
+                alt="visita"
+              />
+              <img src="/iconos/source-fork.svg" width="30px" alt="visita" />
+            </div>
+          </div>
+          <div class="card">
+            <div class="title">Impossible App</div>
+            <p>
+              In hac habitasse platea dictumst. Vivamus dictum rutrum arcu, a
+              placerat velit sagittis id.
+            </p>
+            <div class="icons">
+              <img
+                src="/iconos/star-plus-outline.svg"
+                width="30px"
+                alt="visita"
+              />
+              <img
+                src="/iconos/eye-plus-outline.svg"
+                width="30px"
+                alt="visita"
+              />
+              <img src="/iconos/source-fork.svg" width="30px" alt="visita" />
+            </div>
+          </div>
+          <div class="card">
+            <div class="title">Easy Peasy App</div>
+            <p>
+              Etiam cursus eros ac efficitur fringilla. Vesibulum dignissim urna
+              eget accumsan aliquam. Curabitur dignissim nisi in tortor commodo,
+              ac bibendum magna tincidunt.
+            </p>
+            <div class="icons">
+              <img
+                src="/iconos/star-plus-outline.svg"
+                width="30px"
+                alt="visita"
+              />
+              <img
+                src="/iconos/eye-plus-outline.svg"
+                width="30px"
+                alt="visita"
+              />
+              <img src="/iconos/source-fork.svg" width="30px" alt="visita" />
+            </div>
+          </div>
+          <div class="card">
+            <div class="title">Ad Blocker</div>
+            <p>
+              Quisque aget rutrum nisl. Nam augue justo, cursus vitae metus vel,
+              pharetra herdrerit felis. Aliquam sed malesuada eros.
+            </p>
+            <div class="icons">
+              <img
+                src="/iconos/star-plus-outline.svg"
+                width="30px"
+                alt="visita"
+              />
+              <img
+                src="/iconos/eye-plus-outline.svg"
+                width="30px"
+                alt="visita"
+              />
+              <img src="/iconos/source-fork.svg" width="30px" alt="visita" />
+            </div>
+          </div>
+          <div class="card">
+            <div class="title">Money Maker</div>
+            <p>
+              Praesent convallis, libero quis congue elementum, nunc ante
+              faucibus sapin, ac scelerisque tortor purus sit amet ex.
+              Pellentesque mollis nec sem vel aliquan.
+            </p>
+            <div class="icons">
+              <img
+                src="/iconos/star-plus-outline.svg"
+                width="30px"
+                alt="visita"
+              />
+              <img
+                src="/iconos/eye-plus-outline.svg"
+                width="30px"
+                alt="visita"
+              />
+              <img src="/iconos/source-fork.svg" width="30px" alt="visita" />
+            </div>
+          </div>
+        </div>
+      </article>
+      <article class="announcements">
+        <p class="title-1">Announcements</p>
+        <div class="container-announcements">
+          <div class="content-announcements">
+            <h3 class="title-anno">Site Maintenance</h3>
+            <p class="text-anno">
+              Vestibulum condimentum tellus lacus, in accumsan elit maximus ac.
+              Donec hendrerit sodales congue...
+            </p>
+          </div>
+          <span></span>
+          <div class="content-announcements">
+            <h3 class="title-anno">Community Share Day</h3>
+            <p class="text-anno">
+              Nam vel lectus tincidunt, rutrum nulla eu, ornare libero. aliquam
+              dictum accumsan porttitor...
+            </p>
+          </div>
+          <span></span>
+          <div class="content-announcements">
+            <h3 class="title-anno">Updated Privacy Polícy</h3>
+            <p class="text-anno">
+              Phasellus efficitur nisi eget elit consectetur, eget condimentum
+              ante autor. Cras fringilla sagattis sem in mattis...
+            </p>
+          </div>
+        </div>
+      </article>
+      <article class="trending">
+        <p class="title-1">Trending</p>
+        <div class="container-trending">
+          <div class="container-perfil">
+            <img
+              class="img-trending"
+              src="/imagenes/perfil/Luffy.jpg"
+              width="40px"
+              alt="perfil"
+            />
+            <div class="container-text">
+              <p>@tegan</p>
+              <p>World Peace Builder</p>
+            </div>
+          </div>
+          <div class="container-perfil">
+            <img
+              class="img-trending"
+              src="/imagenes/perfil/descarga.jpg"
+              width="40px"
+              alt="perfil"
+            />
+            <div class="container-text">
+              <p>@morgan</p>
+              <p>Super Cool Project</p>
+            </div>
+          </div>
+          <div class="container-perfil">
+            <img
+              class="img-trending"
+              src="/imagenes/perfil/Iconos.jpg"
+              width="40px"
+              alt="perfil"
+            />
+            <div class="container-text">
+              <p>@kendall</p>
+              <p>Life Changing App</p>
+            </div>
+          </div>
+          <div class="container-perfil">
+            <img
+              class="img-trending"
+              src="/imagenes/perfil/cat.jpg"
+              width="40px"
+              alt="perfil"
+            />
+            <div class="container-text">
+              <p>@alex</p>
+              <p>No Traffic Maker</p>
+            </div>
+          </div>
+        </div>
+      </article> -->
+    </div>
+  </body>
 </html>
